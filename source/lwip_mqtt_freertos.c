@@ -75,7 +75,7 @@
 #endif /* EXAMPLE_NETIF_INIT_FN */
 
 /*! @brief MQTT server host name or IP address. */
-#define EXAMPLE_MQTT_SERVER_HOST "broker.hivemq.com"
+#define EXAMPLE_MQTT_SERVER_HOST "io.adafruit.com"
 
 /*! @brief MQTT server port number. */
 #define EXAMPLE_MQTT_SERVER_PORT 1883
@@ -108,8 +108,8 @@ static char client_id[40];
 /*! @brief MQTT client information. */
 static const struct mqtt_connect_client_info_t mqtt_client_info = {
     .client_id   = (const char *)&client_id[0],
-    .client_user = NULL,
-    .client_pass = NULL,
+    .client_user = "Omar_SP",
+    .client_pass = "aio_jeOi62wQccZCdbcCPLUbkFzaQp7K",
     .keep_alive  = 100,
     .will_topic  = NULL,
     .will_msg    = NULL,
@@ -189,7 +189,7 @@ static void mqtt_incoming_data_cb(void *arg, const u8_t *data, u16_t len, u8_t f
  */
 static void mqtt_subscribe_topics(mqtt_client_t *client)
 {
-    static const char *topics[] = {"lwip_topic/#", "lwip_other/#"};
+    static const char *topics[] = {"Omar_SP/feeds/trimpo", "Omar_SP/feeds/led"};
     int qos[]                   = {0, 1};
     err_t err;
     int i;
@@ -293,8 +293,11 @@ static void mqtt_message_published_cb(void *arg, err_t err)
  */
 static void publish_message(void *ctx)
 {
-    static const char *topic   = "lwip_topic/100";
-    static const char *message = "message from board";
+    static const char *topic   = "Omar_SP/feeds/trimpot";
+    static const char *message = "100";
+
+//    static const char *topic   = "Omar_SP/feeds/led";
+//    static const char *message = "message from board";
 
     LWIP_UNUSED_ARG(ctx);
 
