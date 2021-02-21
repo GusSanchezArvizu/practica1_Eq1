@@ -1,169 +1,169 @@
 lwip/src/core/raw.o lwip/src/core/raw.d: ../lwip/src/core/raw.c \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/opt.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\source/lwipopts.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/arch.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\port/arch/cc.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\port/arch/sys_arch.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\utilities/fsl_debug_console.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\drivers/fsl_common.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\device/fsl_device_registers.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\device/MK64F12.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\CMSIS/core_cm4.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\CMSIS/cmsis_version.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\CMSIS/cmsis_compiler.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\CMSIS/cmsis_gcc.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\device/system_MK64F12.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\device/MK64F12_features.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\drivers/fsl_clock.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\drivers/fsl_common.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\component\serial_manager/fsl_component_serial_manager.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\component\serial_manager/fsl_component_serial_port_uart.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\component\uart/fsl_adapter_uart.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/FreeRTOS.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\source/FreeRTOSConfig.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/projdefs.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/portable.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/deprecated_definitions.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\portable\GCC\ARM_CM4F/portmacro.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/mpu_wrappers.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/task.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/list.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/queue.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/task.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/semphr.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/queue.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/debug.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/def.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/memp.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/priv/memp_std.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/priv/memp_priv.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/mem.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/priv/mem_priv.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/stats.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip_addr.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip4_addr.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip6_addr.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/def.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/netif.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/err.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/pbuf.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/raw.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip4.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/prot/ip4.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip6.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/prot/ip.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/priv/raw_priv.h \
- D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/inet_chksum.h
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/opt.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\source/lwipopts.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/arch.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/arch/cc.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/arch/sys_arch.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\utilities/fsl_debug_console.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_common.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/fsl_device_registers.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/MK64F12.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/core_cm4.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_version.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_compiler.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_gcc.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/system_MK64F12.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/MK64F12_features.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_clock.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_common.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\serial_manager/fsl_component_serial_manager.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\serial_manager/fsl_component_serial_port_uart.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\uart/fsl_adapter_uart.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/FreeRTOS.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\source/FreeRTOSConfig.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/projdefs.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/portable.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/deprecated_definitions.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\portable\GCC\ARM_CM4F/portmacro.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/mpu_wrappers.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/task.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/list.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/queue.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/task.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/semphr.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/queue.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/debug.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/def.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/memp.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/memp_std.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/memp_priv.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/mem.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/mem_priv.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/stats.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip_addr.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip4_addr.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip6_addr.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/def.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/netif.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/err.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/pbuf.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/raw.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip4.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ip4.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip6.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ip.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/raw_priv.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/inet_chksum.h
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/opt.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/opt.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\source/lwipopts.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\source/lwipopts.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/arch.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/arch.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\port/arch/cc.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/arch/cc.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\port/arch/sys_arch.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/arch/sys_arch.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\utilities/fsl_debug_console.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\utilities/fsl_debug_console.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\drivers/fsl_common.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_common.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\device/fsl_device_registers.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/fsl_device_registers.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\device/MK64F12.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/MK64F12.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\CMSIS/core_cm4.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/core_cm4.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\CMSIS/cmsis_version.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_version.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\CMSIS/cmsis_compiler.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_compiler.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\CMSIS/cmsis_gcc.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_gcc.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\device/system_MK64F12.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/system_MK64F12.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\device/MK64F12_features.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/MK64F12_features.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\drivers/fsl_clock.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_clock.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\drivers/fsl_common.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_common.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\component\serial_manager/fsl_component_serial_manager.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\serial_manager/fsl_component_serial_manager.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\component\serial_manager/fsl_component_serial_port_uart.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\serial_manager/fsl_component_serial_port_uart.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\component\uart/fsl_adapter_uart.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\uart/fsl_adapter_uart.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/FreeRTOS.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/FreeRTOS.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\source/FreeRTOSConfig.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\source/FreeRTOSConfig.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/projdefs.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/projdefs.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/portable.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/portable.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/deprecated_definitions.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/deprecated_definitions.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\portable\GCC\ARM_CM4F/portmacro.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\portable\GCC\ARM_CM4F/portmacro.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/mpu_wrappers.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/mpu_wrappers.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/task.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/task.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/list.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/list.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/queue.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/queue.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/task.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/task.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/semphr.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/semphr.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\freertos\freertos_kernel\include/queue.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/queue.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/debug.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/debug.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/def.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/def.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/memp.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/memp.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/priv/memp_std.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/memp_std.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/priv/memp_priv.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/memp_priv.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/mem.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/mem.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/priv/mem_priv.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/mem_priv.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/stats.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/stats.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip_addr.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip_addr.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip4_addr.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip4_addr.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip6_addr.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip6_addr.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/def.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/def.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/netif.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/netif.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/err.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/err.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/pbuf.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/pbuf.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/raw.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/raw.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip4.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip4.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/prot/ip4.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ip4.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/ip6.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip6.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/prot/ip.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ip.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/priv/raw_priv.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/raw_priv.h:
 
-D:\Archivos(D)\ITESO\8vo\ SEMESTRE\Redes\ para\ Sistemas\ Embebidos\workspace\frdmk64f_lwip_mqtt_freertos_practica1\lwip\src\include/lwip/inet_chksum.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/inet_chksum.h:

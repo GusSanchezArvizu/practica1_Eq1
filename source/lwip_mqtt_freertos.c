@@ -91,10 +91,26 @@
  ******************************************************************************/
 
 static void connect_to_mqtt(void *ctx);
-
+static char* convert_ascii_to_number(int number);
 /*******************************************************************************
  * Variables
  ******************************************************************************/
+static char lookup_table[101][3] = {
+		"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+		"11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
+		"21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
+		"31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
+		"41", "42", "43", "44", "45", "46", "47", "48", "49", "50",
+		"51", "52", "53", "54", "55", "56", "57", "58", "59", "60",
+		"61", "62", "63", "64", "65", "66", "67", "68", "69", "70",
+		"71", "72", "73", "74", "75", "76", "77", "78", "79", "80",
+		"81", "82", "83", "84", "85", "86", "87", "88", "89", "90",
+		"91", "92", "93", "94", "95", "96", "97", "98", "99", "100"
+};
+
+static int adc_value = 0;
+static char leds_status_value[3] = "";
+volatile uint32_t g_systickCounter;
 
 static mdio_handle_t mdioHandle = {.ops = &EXAMPLE_MDIO_OPS};
 static phy_handle_t phyHandle   = {.phyAddr = EXAMPLE_PHY_ADDRESS, .mdioHandle = &mdioHandle, .ops = &EXAMPLE_PHY_OPS};
@@ -109,7 +125,7 @@ static char client_id[40];
 static const struct mqtt_connect_client_info_t mqtt_client_info = {
     .client_id   = (const char *)&client_id[0],
     .client_user = "Omar_SP",
-    .client_pass = "aio_jeOi62wQccZCdbcCPLUbkFzaQp7K",
+    .client_pass = "aio_ROhF122pL764PtEdzRcqXrCFuMKS",
     .keep_alive  = 100,
     .will_topic  = NULL,
     .will_msg    = NULL,
@@ -163,14 +179,21 @@ static void mqtt_incoming_publish_cb(void *arg, const char *topic, u32_t tot_len
 static void mqtt_incoming_data_cb(void *arg, const u8_t *data, u16_t len, u8_t flags)
 {
     int i;
-
     LWIP_UNUSED_ARG(arg);
+
+    for(int j = 0; j<3 ;j++)
+    	leds_status_value[j] = '0';
 
     for (i = 0; i < len; i++)
     {
         if (isprint(data[i]))
         {
             PRINTF("%c", (char)data[i]);
+            leds_status_value[i] = data[i];
+            if(leds_status_value[1] == 'N')
+            	GPIO_PortClear(BOARD_LED_GPIO, 1u << BOARD_LED_GPIO_PIN);
+            else if(leds_status_value[1] == 'F')
+            	GPIO_PortSet(BOARD_LED_GPIO, 1u << BOARD_LED_GPIO_PIN);
         }
         else
         {
@@ -189,8 +212,8 @@ static void mqtt_incoming_data_cb(void *arg, const u8_t *data, u16_t len, u8_t f
  */
 static void mqtt_subscribe_topics(mqtt_client_t *client)
 {
-    static const char *topics[] = {"Omar_SP/feeds/trimpo", "Omar_SP/feeds/led"};
-    int qos[]                   = {0, 1};
+    static const char *topics[] = {"Omar_SP/feeds/led", "Omar_SP/feeds/adc"};
+    int qos[]                   = {1, 1};
     err_t err;
     int i;
 
@@ -293,9 +316,9 @@ static void mqtt_message_published_cb(void *arg, err_t err)
  */
 static void publish_message(void *ctx)
 {
-    static const char *topic   = "Omar_SP/feeds/trimpot";
-    static const char *message = "100";
-
+    static const char *topic   = "Omar_SP/feeds/adc";
+    char *message = convert_ascii_to_number(adc_value);
+    adc_value++;
 //    static const char *topic   = "Omar_SP/feeds/led";
 //    static const char *message = "message from board";
 
@@ -304,6 +327,16 @@ static void publish_message(void *ctx)
     PRINTF("Going to publish to the topic \"%s\"...\r\n", topic);
 
     mqtt_publish(mqtt_client, topic, message, strlen(message), 1, 0, mqtt_message_published_cb, (void *)topic);
+}
+
+static char* convert_ascii_to_number(int number)
+{
+	char *number_ascii = "";
+	if((number <= 100) && (number >= 0))
+		number_ascii = lookup_table[number];
+	else
+		number_ascii = "";
+	return number_ascii;
 }
 
 /*!
@@ -371,7 +404,7 @@ static void app_thread(void *arg)
     }
 
     /* Publish some messages */
-    for (i = 0; i < 5;)
+    for (;;)
     {
         if (connected)
         {
@@ -383,7 +416,7 @@ static void app_thread(void *arg)
             i++;
         }
 
-        sys_msleep(1000U);
+        sys_msleep(5000U);
     }
 
     vTaskDelete(NULL);
@@ -410,6 +443,7 @@ static void generate_client_id(void)
 /*!
  * @brief Main function
  */
+
 int main(void)
 {
     static struct netif netif;
@@ -430,6 +464,8 @@ int main(void)
     BOARD_InitBootClocks();
     BOARD_InitDebugConsole();
     /* Disable SYSMPU. */
+
+
     base->CESR &= ~SYSMPU_CESR_VLD_MASK;
     generate_client_id();
 
