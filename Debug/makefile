@@ -44,25 +44,25 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: frdmk64f_lwip_mqtt_freertos_practica1.axf
+all: p1_redes.axf
 
 # Tool invocations
-frdmk64f_lwip_mqtt_freertos_practica1.axf: $(OBJS) $(USER_OBJS)
+p1_redes.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -Xlinker -Map="frdmk64f_lwip_mqtt_freertos_practica1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T frdmk64f_lwip_mqtt_freertos_practica1_Debug.ld -o "frdmk64f_lwip_mqtt_freertos_practica1.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -Xlinker -Map="p1_redes.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T frdmk64f_lwip_mqtt_freertos_practica1_Debug.ld -o "p1_redes.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) frdmk64f_lwip_mqtt_freertos_practica1.axf
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) p1_redes.axf
 	-@echo ' '
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "frdmk64f_lwip_mqtt_freertos_practica1.axf"; # arm-none-eabi-objcopy -v -O binary "frdmk64f_lwip_mqtt_freertos_practica1.axf" "frdmk64f_lwip_mqtt_freertos_practica1.bin" ; # checksum -p MK64FN1M0xxx12 -d "frdmk64f_lwip_mqtt_freertos_practica1.bin";
+	-arm-none-eabi-size "p1_redes.axf"; # arm-none-eabi-objcopy -v -O binary "p1_redes.axf" "p1_redes.bin" ; # checksum -p MK64FN1M0xxx12 -d "p1_redes.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents post-build

@@ -37,9 +37,15 @@
 #include "fsl_device_registers.h"
 #include "fsl_phyksz8081.h"
 #include "fsl_enet_mdio.h"
+#include "fsl_adc16.h"
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
+#define DEMO_ADC16_BASE          ADC0
+#define DEMO_ADC16_CHANNEL_GROUP 0U
+#define DEMO_ADC16_USER_CHANNEL  12U
+#define MAX_ADC_VALUE 4095U
+#define MAX_PERCENTAGE 100U
 
 /* MAC address configuration. */
 #define configMAC_ADDR                     \
@@ -109,7 +115,7 @@ static char client_id[40];
 static const struct mqtt_connect_client_info_t mqtt_client_info = {
     .client_id   = (const char *)&client_id[0],
     .client_user = "Omar_SP",
-    .client_pass = "aio_jeOi62wQccZCdbcCPLUbkFzaQp7K",
+    .client_pass = "aio_jAZA737YbP9tz4yuqUkKOjLRM9Vs",
     .keep_alive  = 100,
     .will_topic  = NULL,
     .will_msg    = NULL,
@@ -189,10 +195,11 @@ static void mqtt_incoming_data_cb(void *arg, const u8_t *data, u16_t len, u8_t f
  */
 static void mqtt_subscribe_topics(mqtt_client_t *client)
 {
-    static const char *topics[] = {"Omar_SP/feeds/trimpo", "Omar_SP/feeds/led"};
-    int qos[]                   = {0, 1};
+    static const char *topics[] = {"Omar_SP/feeds/adc", "Omar_SP/feeds/led"};
+    int qos[]                   = {1, 1};
     err_t err;
     int i;
+
 
     mqtt_set_inpub_callback(client, mqtt_incoming_publish_cb, mqtt_incoming_data_cb,
                             LWIP_CONST_CAST(void *, &mqtt_client_info));
@@ -288,16 +295,50 @@ static void mqtt_message_published_cb(void *arg, err_t err)
     }
 }
 
+uint16_t get_adc_value() {
+	/* Using ADC polling example code */
+    static int adc_init = 0;
+    static adc16_config_t adc16ConfigStruct;
+    static adc16_channel_config_t adc16ChannelConfigStruct;
+
+    if (adc_init == 0) {
+    	 ADC16_GetDefaultConfig(&adc16ConfigStruct);
+    	 ADC16_Init(DEMO_ADC16_BASE, &adc16ConfigStruct);
+    	 ADC16_EnableHardwareTrigger(DEMO_ADC16_BASE, false); /* Make sure the software trigger is used. */
+		adc16ChannelConfigStruct.channelNumber                        = DEMO_ADC16_USER_CHANNEL;
+		adc16ChannelConfigStruct.enableInterruptOnConversionCompleted = false;
+
+    	adc_init = 1;
+    }
+
+    ADC16_SetChannelConfig(DEMO_ADC16_BASE, DEMO_ADC16_CHANNEL_GROUP, &adc16ChannelConfigStruct);
+    while (0U == (kADC16_ChannelConversionDoneFlag &
+                  ADC16_GetChannelStatusFlags(DEMO_ADC16_BASE, DEMO_ADC16_CHANNEL_GROUP)))
+    {
+    }
+    uint16_t adc_value = ADC16_GetChannelConversionValue(DEMO_ADC16_BASE, DEMO_ADC16_CHANNEL_GROUP);
+    PRINTF("ADC Value: %d\r\n", adc_value);
+    return adc_value;
+}
+
 /*!
  * @brief Publishes a message. To be called on tcpip_thread.
  */
 static void publish_message(void *ctx)
 {
-    static const char *topic   = "Omar_SP/feeds/trimpot";
-    static const char *message = "100";
 
-//    static const char *topic   = "Omar_SP/feeds/led";
-//    static const char *message = "message from board";
+    static const char *topic   = "Omar_SP/feeds/adc";
+    char *message;
+    char adc_value_ascii[3];
+
+    uint16_t adc_value_perecent = get_adc_value() / MAX_ADC_VALUE;
+    if (adc_value_perecent > MAX_PERCENTAGE) {
+    	adc_value_perecent = 0;
+    }
+    adc_value_ascii[0] = (adc_value_perecent%10) + 0x30;
+    adc_value_ascii[1] = ((uint16_t)adc_value_perecent/10)%10 + 0x30;
+    adc_value_ascii[2] = ((uint16_t)adc_value_perecent/100)%10 + 0x30;
+    message = adc_value_ascii;
 
     LWIP_UNUSED_ARG(ctx);
 
@@ -371,7 +412,7 @@ static void app_thread(void *arg)
     }
 
     /* Publish some messages */
-    for (i = 0; i < 5;)
+    for (i = 0; i < 100;)
     {
         if (connected)
         {
