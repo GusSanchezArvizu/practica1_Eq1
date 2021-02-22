@@ -4,7 +4,6 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../drivers/fsl_adc16.c \
 ../drivers/fsl_clock.c \
 ../drivers/fsl_common.c \
 ../drivers/fsl_enet.c \
@@ -18,7 +17,6 @@ C_SRCS += \
 ../drivers/fsl_uart.c 
 
 OBJS += \
-./drivers/fsl_adc16.o \
 ./drivers/fsl_clock.o \
 ./drivers/fsl_common.o \
 ./drivers/fsl_enet.o \
@@ -32,7 +30,6 @@ OBJS += \
 ./drivers/fsl_uart.o 
 
 C_DEPS += \
-./drivers/fsl_adc16.d \
 ./drivers/fsl_clock.d \
 ./drivers/fsl_common.d \
 ./drivers/fsl_enet.d \
@@ -50,7 +47,7 @@ C_DEPS += \
 drivers/%.o: ../drivers/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU C Compiler'
-	arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -D_POSIX_SOURCE -DUSE_RTOS=1 -DPRINTF_ADVANCED_ENABLE=1 -DFRDM_K64F -DFREEDOM -DSERIAL_PORT_TYPE_UART=1 -DFSL_RTOS_FREE_RTOS -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"D:\kcdia\Documents\Redes_ws\p1_redes\board" -I"D:\kcdia\Documents\Redes_ws\p1_redes\source" -I"D:\kcdia\Documents\Redes_ws\p1_redes\mdio" -I"D:\kcdia\Documents\Redes_ws\p1_redes\phy" -I"D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include\lwip\apps" -I"D:\kcdia\Documents\Redes_ws\p1_redes\lwip\port" -I"D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src" -I"D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include" -I"D:\kcdia\Documents\Redes_ws\p1_redes\drivers" -I"D:\kcdia\Documents\Redes_ws\p1_redes\utilities" -I"D:\kcdia\Documents\Redes_ws\p1_redes\device" -I"D:\kcdia\Documents\Redes_ws\p1_redes\component\uart" -I"D:\kcdia\Documents\Redes_ws\p1_redes\component\serial_manager" -I"D:\kcdia\Documents\Redes_ws\p1_redes\component\lists" -I"D:\kcdia\Documents\Redes_ws\p1_redes\CMSIS" -I"D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include" -I"D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\portable\GCC\ARM_CM4F" -O0 -fno-common -g3 -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../$(@D)/"=. -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -D_POSIX_SOURCE -DUSE_RTOS=1 -DPRINTF_ADVANCED_ENABLE=1 -DFRDM_K64F -DFREEDOM -DSERIAL_PORT_TYPE_UART=1 -DFSL_RTOS_FREE_RTOS -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\board" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\source" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\mdio" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\phy" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include\lwip\apps" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\utilities" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\uart" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\serial_manager" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\lists" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include" -I"C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\portable\GCC\ARM_CM4F" -O0 -fno-common -g3 -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../$(@D)/"=. -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

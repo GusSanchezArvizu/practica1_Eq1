@@ -26,6 +26,21 @@ processor_version: 6.0.0
 #include "fsl_common.h"
 #include "fsl_port.h"
 #include "pin_mux.h"
+#include "fsl_gpio.h"
+
+/*! @name PORTB22 (number 68), D12[1]/LEDRGB_RED
+  @{ */
+#define BOARD_LED_RED_GPIO GPIOB /*!<@brief GPIO device name: GPIOB */
+#define BOARD_LED_RED_PORT PORTB /*!<@brief PORT device name: PORTB */
+#define BOARD_LED_RED_PIN 22U    /*!<@brief PORTB pin index: 22 */
+                                 /* @} */
+
+typedef struct
+{
+    gpio_pin_direction_t pinDirection; /*!< GPIO direction, input or output */
+    /* Output configurations; ignore if configured as an input pin */
+    uint8_t outputLogic; /*!< Set a default output logic, which has no use in input */
+} gpio_pin_led_config_t;
 
 /* FUNCTION ************************************************************************************************************
  *
@@ -163,6 +178,35 @@ void BOARD_InitPins(void)
 
                   /* UART 0 transmit data source select: UART0_TX pin. */
                   | SIM_SOPT5_UART0TXSRC(SOPT5_UART0TXSRC_UART_TX));
+
+/////////////////////////////////////////////////////////////////////////
+    const gpio_pin_led_config_t LED_RED_config = {
+		.pinDirection = kGPIO_DigitalOutput,
+		.outputLogic = 0U
+	};
+	/* Initialize GPIO functionality on pin PTB22 (pin 68)  */
+	GPIO_PinInit(BOARD_LED_RED_GPIO, BOARD_LED_RED_PIN, &LED_RED_config);
+
+	/* PORTA2 (pin 36) is configured as TRACE_SWO */
+	PORT_SetPinMux(PORTA, 2U, kPORT_MuxAlt7);
+
+	PORTA->PCR[2] = ((PORTA->PCR[2] &
+					  /* Mask bits to zero which are setting */
+					  (~(PORT_PCR_PS_MASK | PORT_PCR_PE_MASK | PORT_PCR_DSE_MASK | PORT_PCR_ISF_MASK)))
+
+					 /* Pull Select: Internal pulldown resistor is enabled on the corresponding pin, if the
+					  * corresponding PE field is set. */
+					 | PORT_PCR_PS(kPORT_PullDown)
+
+					 /* Pull Enable: Internal pullup or pulldown resistor is not enabled on the corresponding pin. */
+					 | PORT_PCR_PE(kPORT_PullDisable)
+
+					 /* Drive Strength Enable: Low drive strength is configured on the corresponding pin, if pin
+					  * is configured as a digital output. */
+					 | PORT_PCR_DSE(kPORT_LowDriveStrength));
+
+	/* PORTB22 (pin 68) is configured as PTB22 */
+	PORT_SetPinMux(BOARD_LED_RED_PORT, BOARD_LED_RED_PIN, kPORT_MuxAsGpio);
 }
 /***********************************************************************************************************************
  * EOF

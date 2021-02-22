@@ -1,296 +1,293 @@
 source/lwip_mqtt_freertos.o source/lwip_mqtt_freertos.d: \
  ../source/lwip_mqtt_freertos.c \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/opt.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\source/lwipopts.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/arch.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\port/arch/cc.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\port/arch/sys_arch.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\utilities/fsl_debug_console.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_common.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\device/fsl_device_registers.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\device/MK64F12.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\CMSIS/core_cm4.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\CMSIS/cmsis_version.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\CMSIS/cmsis_compiler.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\CMSIS/cmsis_gcc.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\device/system_MK64F12.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\device/MK64F12_features.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_clock.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_common.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\component\serial_manager/fsl_component_serial_manager.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\component\serial_manager/fsl_component_serial_port_uart.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\component\uart/fsl_adapter_uart.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/FreeRTOS.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\source/FreeRTOSConfig.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/projdefs.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/portable.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/deprecated_definitions.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\portable\GCC\ARM_CM4F/portmacro.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/mpu_wrappers.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/task.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/list.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/queue.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/task.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/semphr.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/queue.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/debug.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\board/pin_mux.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\board/clock_config.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\board/board.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\board/clock_config.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_gpio.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_port.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\phy/fsl_phy.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\mdio/fsl_mdio.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/api.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/netbuf.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/pbuf.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/err.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip_addr.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/def.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip4_addr.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip6_addr.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/def.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/sys.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\port/arch/sys_arch.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/apps/mqtt.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/apps/mqtt_opts.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/iana.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/dhcp.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/netif.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/stats.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/mem.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/memp.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/priv/memp_std.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/priv/memp_priv.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/priv/mem_priv.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/udp.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip4.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/ip4.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip6.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/ip.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/udp.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/acd.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/etharp.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/ethernet.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/ieee.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/etharp.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/acd.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/netdb.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/inet.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/sockets.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/errno.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/netifapi.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/autoip.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/priv/tcpip_priv.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/tcpip.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/timeouts.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/priv/api_msg.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/igmp.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/dhcp.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/netif/ethernet.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\lwip\port/enet_ethernetif.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/opt.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\source/lwipopts.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/arch.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/arch/cc.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/arch/sys_arch.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\utilities/fsl_debug_console.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_common.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/fsl_device_registers.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/MK64F12.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/core_cm4.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_version.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_compiler.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_gcc.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/system_MK64F12.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/MK64F12_features.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_clock.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_common.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\serial_manager/fsl_component_serial_manager.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\serial_manager/fsl_component_serial_port_uart.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\uart/fsl_adapter_uart.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/FreeRTOS.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\source/FreeRTOSConfig.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/projdefs.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/portable.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/deprecated_definitions.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\portable\GCC\ARM_CM4F/portmacro.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/mpu_wrappers.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/task.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/list.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/queue.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/task.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/semphr.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/queue.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/debug.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\board/pin_mux.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\board/clock_config.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\board/board.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\board/clock_config.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_gpio.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_port.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\phy/fsl_phy.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\mdio/fsl_mdio.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/api.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/netbuf.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/pbuf.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/err.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip_addr.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/def.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip4_addr.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip6_addr.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/def.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/sys.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/arch/sys_arch.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/apps/mqtt.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/apps/mqtt_opts.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/iana.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/dhcp.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/netif.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/stats.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/mem.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/memp.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/memp_std.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/memp_priv.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/mem_priv.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/udp.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip4.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ip4.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip6.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ip.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/udp.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/acd.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/etharp.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ethernet.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ieee.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/etharp.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/acd.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/netdb.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/inet.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/sockets.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/errno.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/netifapi.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/autoip.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/tcpip_priv.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/tcpip.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/timeouts.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/api_msg.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/igmp.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/dhcp.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/netif/ethernet.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/enet_ethernetif.h \
  ../source/lwip_mqtt_id.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\phy/fsl_phyksz8081.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\phy/fsl_phy.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\mdio/fsl_enet_mdio.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_enet.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\mdio/fsl_mdio.h \
- D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_adc16.h
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\phy/fsl_phyksz8081.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\phy/fsl_phy.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\mdio/fsl_enet_mdio.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_enet.h \
+ C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\mdio/fsl_mdio.h
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/opt.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/opt.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\source/lwipopts.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\source/lwipopts.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/arch.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/arch.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\port/arch/cc.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/arch/cc.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\port/arch/sys_arch.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/arch/sys_arch.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\utilities/fsl_debug_console.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\utilities/fsl_debug_console.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_common.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_common.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\device/fsl_device_registers.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/fsl_device_registers.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\device/MK64F12.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/MK64F12.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\CMSIS/core_cm4.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/core_cm4.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\CMSIS/cmsis_version.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_version.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\CMSIS/cmsis_compiler.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_compiler.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\CMSIS/cmsis_gcc.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\CMSIS/cmsis_gcc.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\device/system_MK64F12.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/system_MK64F12.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\device/MK64F12_features.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\device/MK64F12_features.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_clock.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_clock.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_common.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_common.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\component\serial_manager/fsl_component_serial_manager.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\serial_manager/fsl_component_serial_manager.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\component\serial_manager/fsl_component_serial_port_uart.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\serial_manager/fsl_component_serial_port_uart.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\component\uart/fsl_adapter_uart.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\component\uart/fsl_adapter_uart.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/FreeRTOS.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/FreeRTOS.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\source/FreeRTOSConfig.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\source/FreeRTOSConfig.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/projdefs.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/projdefs.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/portable.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/portable.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/deprecated_definitions.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/deprecated_definitions.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\portable\GCC\ARM_CM4F/portmacro.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\portable\GCC\ARM_CM4F/portmacro.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/mpu_wrappers.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/mpu_wrappers.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/task.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/task.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/list.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/list.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/queue.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/queue.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/task.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/task.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/semphr.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/semphr.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\freertos\freertos_kernel\include/queue.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\freertos\freertos_kernel\include/queue.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/debug.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/debug.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\board/pin_mux.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\board/pin_mux.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\board/clock_config.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\board/clock_config.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\board/board.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\board/board.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\board/clock_config.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\board/clock_config.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_gpio.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_gpio.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_port.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_port.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\phy/fsl_phy.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\phy/fsl_phy.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\mdio/fsl_mdio.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\mdio/fsl_mdio.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/api.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/api.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/netbuf.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/netbuf.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/pbuf.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/pbuf.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/err.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/err.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip_addr.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip_addr.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/def.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/def.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip4_addr.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip4_addr.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip6_addr.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip6_addr.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/def.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/def.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/sys.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/sys.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\port/arch/sys_arch.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/arch/sys_arch.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/apps/mqtt.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/apps/mqtt.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/apps/mqtt_opts.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/apps/mqtt_opts.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/iana.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/iana.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/dhcp.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/dhcp.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/netif.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/netif.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/stats.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/stats.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/mem.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/mem.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/memp.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/memp.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/priv/memp_std.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/memp_std.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/priv/memp_priv.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/memp_priv.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/priv/mem_priv.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/mem_priv.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/udp.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/udp.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip4.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip4.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/ip4.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ip4.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/ip6.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/ip6.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/ip.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ip.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/udp.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/udp.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/acd.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/acd.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/etharp.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/etharp.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/ethernet.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ethernet.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/ieee.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/ieee.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/etharp.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/etharp.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/acd.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/acd.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/netdb.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/netdb.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/inet.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/inet.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/sockets.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/sockets.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/errno.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/errno.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/netifapi.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/netifapi.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/autoip.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/autoip.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/priv/tcpip_priv.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/tcpip_priv.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/tcpip.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/tcpip.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/timeouts.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/timeouts.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/priv/api_msg.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/priv/api_msg.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/igmp.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/igmp.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/lwip/prot/dhcp.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/lwip/prot/dhcp.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\src\include/netif/ethernet.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\src\include/netif/ethernet.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\lwip\port/enet_ethernetif.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\lwip\port/enet_ethernetif.h:
 
 ../source/lwip_mqtt_id.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\phy/fsl_phyksz8081.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\phy/fsl_phyksz8081.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\phy/fsl_phy.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\phy/fsl_phy.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\mdio/fsl_enet_mdio.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\mdio/fsl_enet_mdio.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_enet.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\drivers/fsl_enet.h:
 
-D:\kcdia\Documents\Redes_ws\p1_redes\mdio/fsl_mdio.h:
-
-D:\kcdia\Documents\Redes_ws\p1_redes\drivers/fsl_adc16.h:
+C:\MCU_practicas\frdmk64f_lwip_mqtt_freertos_mqtt\mdio/fsl_mdio.h:
